@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtd33tjwyj1ao"]
+
+[ext_resource type="PackedScene" uid="uid://bb5bnc2c63qwx" path="res://Player.tscn" id="1_foy68"]
+[ext_resource type="PackedScene" uid="uid://ddkvrp4f7rmq2" path="res://Coin.tscn" id="2_wo0nh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4htif"]
+size = Vector2(66, 65)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_foy68")]
+position = Vector2(550, 350)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, 14.5)
+shape = SubResource("RectangleShape2D_4htif")
+
+[node name="Player2" parent="." instance=ExtResource("1_foy68")]
+position = Vector2(-138, 1)
+
+[node name="Player3" parent="." instance=ExtResource("1_foy68")]
+position = Vector2(176, 17)
+
+[node name="Player4" parent="." instance=ExtResource("1_foy68")]
+position = Vector2(0, 174)
+
+[node name="Player5" parent="." instance=ExtResource("1_foy68")]
+position = Vector2(444, 119)
+
+[node name="Coin" parent="." instance=ExtResource("2_wo0nh")]
+position = Vector2(700, -25)
+
+[node name="Coin2" parent="." instance=ExtResource("2_wo0nh")]
+position = Vector2(700, 25)
+
+[node name="Coin3" parent="." instance=ExtResource("2_wo0nh")]
+position = Vector2(675, 1)
+scale = Vector2(0.5, 0.5)
+
+[node name="Coin4" parent="." instance=ExtResource("2_wo0nh")]
+position = Vector2(725, 0)
+scale = Vector2(0.5, 0.5)
+
+[node name="Coin5" parent="." instance=ExtResource("2_wo0nh")]
+position = Vector2(640, 0)
+rotation = 0.785398
+
+[node name="Coin6" parent="." instance=ExtResource("2_wo0nh")]
+position = Vector2(760, 0)
+rotation = -0.785398
