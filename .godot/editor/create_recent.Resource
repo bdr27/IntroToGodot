@@ -1,2 +1,0 @@
-CanvasItemMaterial
-StandardMaterial3D
